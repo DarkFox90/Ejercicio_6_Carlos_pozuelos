@@ -1,3 +1,3 @@
-public class IRegistrable {
-    
+public interface IRegistrable {
+    String registra();
 }

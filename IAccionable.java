@@ -1,3 +1,3 @@
-public class IAccionable {
-    
+public interface  IAccionable {
+    String Accion();
 }

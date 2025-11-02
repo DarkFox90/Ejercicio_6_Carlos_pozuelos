@@ -1,3 +1,3 @@
-public class Imedible {
-    
+public interface Imedible {
+    String mide();
 }
