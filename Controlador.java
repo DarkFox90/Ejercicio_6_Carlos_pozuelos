@@ -25,7 +25,7 @@ public class Controlador {
     }
 
     public void sistema() {
-        int salir = 5;
+        int salir = 4;
         int opcion = 0;
 
         while (opcion != salir) {
@@ -52,7 +52,7 @@ public class Controlador {
                     Collections.sort(copia);
                     vista.listarEquipo(copia);
                     break;
-                case 5:
+                case 4:
                     vista.mostrarMensaje("gracias por utilizar el programa");
                     break;
                 default:
