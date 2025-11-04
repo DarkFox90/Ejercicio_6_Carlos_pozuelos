@@ -15,7 +15,7 @@ public class Sensor extends Equipo implements IAccionable, IRegistrable {
 
     @Override
     public String registra() {
-        return "Este dron registra: " + registrar;
+        return "Este sensor registra: " + registrar;
     }
 
      @Override
