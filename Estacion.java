@@ -3,11 +3,12 @@ public class Estacion extends Equipo implements IAccionable, IRegistrable, Imedi
     private String registrar;
 
     public Estacion(int id, String nombre, double consumo, String accion, String registrar) {
-        super(nombre, id, consumo);
+        super(nombre, id, consumo); //super para obtener los atributos de Equipo
         this.accion = accion;
         this.registrar = registrar; 
     }
 
+    //interfaces de accion, medir y registrar para hacer herencia multiple de metodos
     @Override
     public String Accion() {
         return "Esta estación realiza la siguiente accion: " + accion;
@@ -25,10 +26,10 @@ public class Estacion extends Equipo implements IAccionable, IRegistrable, Imedi
 
      @Override
     public String toString() {
-        return "Estacion ID=" + id
-             + " | Nombre=" + nombre
-             + " | Consumo=" + consumo + "W"
-             + " | Accion=" + accion
-             + " | Registrar=" + registrar;
+        return "Estacion ID= " + id
+             + " | Nombre = " + nombre
+             + " | Consumo = " + consumo + "W"
+             + " | Accion = " + accion
+             + " | Registra = " + registrar;
     }
 }
