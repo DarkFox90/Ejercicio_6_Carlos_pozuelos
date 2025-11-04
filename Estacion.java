@@ -10,7 +10,7 @@ public class Estacion extends Equipo implements IAccionable, IRegistrable, Imedi
 
     @Override
     public String Accion() {
-        return "esta estación realiza la siguiente accion: " + accion;
+        return "Esta estación realiza la siguiente accion: " + accion;
     }
 
     @Override
@@ -22,5 +22,13 @@ public class Estacion extends Equipo implements IAccionable, IRegistrable, Imedi
     public String registra() {
         return "Esta estación registra: " + registrar;
     }
-    
+
+     @Override
+    public String toString() {
+        return "Estacion ID=" + id
+             + " | Nombre=" + nombre
+             + " | Consumo=" + consumo + "W"
+             + " | Accion=" + accion
+             + " | Registrar=" + registrar;
+    }
 }
